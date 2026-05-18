@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Atividade JS - Code Sushi</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-zinc-950 text-white min-h-screen p-6">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-4xl font-bold text-center mb-10 text-red-500">
+        Atividade de JavaScript
+      </h1>
+
+      <div class="grid gap-8">
+        <section class="bg-zinc-900 p-6 rounded-xl">
+          <h2 class="text-2xl font-bold mb-4">1) Maior e Menor Valor</h2>
+
+          <div class="grid grid-cols-2 gap-4">
+            <input
+              type="number"
+              id="n1"
+              placeholder="Número 1"
+              class="p-3 rounded bg-zinc-800"
+            />
+            <input
+              type="number"
+              id="n2"
+              placeholder="Número 2"
+              class="p-3 rounded bg-zinc-800"
+            />
+            <input
+              type="number"
+              id="n3"
+              placeholder="Número 3"
+              class="p-3 rounded bg-zinc-800"
+            />
+            <input
+              type="number"
+              id="n4"
+              placeholder="Número 4"
+              class="p-3 rounded bg-zinc-800"
+            />
+            <input
+              type="number"
+              id="n5"
+              placeholder="Número 5"
+              class="p-3 rounded bg-zinc-800"
+            />
+          </div>
+
+          <button
+            onclick="executarMaiorMenor()"
+            class="mt-4 bg-red-500 px-4 py-2 rounded hover:bg-red-600"
+          >
+            Verificar
+          </button>
+
+          <p id="resultado1" class="mt-4 text-zinc-300"></p>
+        </section>
+
+        <section class="bg-zinc-900 p-6 rounded-xl">
+          <h2 class="text-2xl font-bold mb-4">2) Verificar Vogal</h2>
+
+          <input
+            type="text"
+            id="vogal"
+            maxlength="1"
+            placeholder="Digite uma letra"
+            class="p-3 rounded bg-zinc-800 w-full"
+          />
+
+          <button
+            onclick="executarVogal()"
+            class="mt-4 bg-red-500 px-4 py-2 rounded hover:bg-red-600"
+          >
+            Verificar
+          </button>
+
+          <p id="resultado2" class="mt-4 text-zinc-300"></p>
+        </section>
+
+        <section class="bg-zinc-900 p-6 rounded-xl">
+          <h2 class="text-2xl font-bold mb-4">3) Limites</h2>
+
+          <div class="grid grid-cols-2 gap-4">
+            <input
+              type="number"
+              id="li"
+              placeholder="Limite inferior"
+              class="p-3 rounded bg-zinc-800"
+            />
+            <input
+              type="number"
+              id="ls"
+              placeholder="Limite superior"
+              class="p-3 rounded bg-zinc-800"
+            />
+          </div>
+
+          <button
+            onclick="executarLimites()"
+            class="mt-4 bg-red-500 px-4 py-2 rounded hover:bg-red-600"
+          >
+            Calcular
+          </button>
+
+          <p id="resultado3" class="mt-4 text-zinc-300"></p>
+        </section>
+
+        <section class="bg-zinc-900 p-6 rounded-xl">
+          <h2 class="text-2xl font-bold mb-4">4) Ordem Crescente</h2>
+
+          <div class="grid grid-cols-3 gap-4">
+            <input
+              type="number"
+              id="o1"
+              placeholder="Valor 1"
+              class="p-3 rounded bg-zinc-800"
+            />
+            <input
+              type="number"
+              id="o2"
+              placeholder="Valor 2"
+              class="p-3 rounded bg-zinc-800"
+            />
+            <input
+              type="number"
+              id="o3"
+              placeholder="Valor 3"
+              class="p-3 rounded bg-zinc-800"
+            />
+          </div>
+
+          <button
+            onclick="executarOrdem()"
+            class="mt-4 bg-red-500 px-4 py-2 rounded hover:bg-red-600"
+          >
+            Ordenar
+          </button>
+
+          <p id="resultado4" class="mt-4 text-zinc-300"></p>
+        </section>
+
+        <section class="bg-zinc-900 p-6 rounded-xl">
+          <h2 class="text-2xl font-bold mb-4">5) Positivo ou Negativo</h2>
+
+          <input
+            type="number"
+            id="positivo"
+            placeholder="Digite um número"
+            class="p-3 rounded bg-zinc-800 w-full"
+          />
+
+          <button
+            onclick="executarPositivoNegativo()"
+            class="mt-4 bg-red-500 px-4 py-2 rounded hover:bg-red-600"
+          >
+            Verificar
+          </button>
+
+          <p id="resultado5" class="mt-4 text-zinc-300"></p>
+        </section>
+
+        <section class="bg-zinc-900 p-6 rounded-xl">
+          <h2 class="text-2xl font-bold mb-4">6) Par ou Ímpar</h2>
+
+          <input
+            type="number"
+            id="par"
+            placeholder="Digite um número"
+            class="p-3 rounded bg-zinc-800 w-full"
+          />
+
+          <button
+            onclick="executarParImpar()"
+            class="mt-4 bg-red-500 px-4 py-2 rounded hover:bg-red-600"
+          >
+            Verificar
+          </button>
+
+          <p id="resultado6" class="mt-4 text-zinc-300"></p>
+        </section>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
